@@ -1,3 +1,53 @@
 /* CSS for Remote Loc */
 
+/* Colors */
+$primaryColor: #117B9E;
+$secondColor: #38C4F2;
+$primaryDark: #117596;
+$white: #ffffff;
+$greyLight: #f5f5f5;
+
 body { color: #777777; }
+
+a:active, a:link, a:visited { color: $primaryColor; text-decoration: none; } 
+a:hover {  color: $secondColor; text-decoration: none; }
+
+@import 'buttons';
+
+.logo {
+	font-family: 'Oleo Script Swash Caps', cursive;
+	font-size: 350%;
+	color: $primaryColor;
+}
+.rListing { 
+	border: 1px solid grey;
+	background-color: white;
+}
+/* Left Float */
+@mixin float-left($float-type-l) {
+  	float: $float-type-l;
+  	padding-left: 5em;
+}
+/* Right Float */
+@mixin float-right($float-type-r) {
+  	float: $float-type-r;
+  	padding-right: 5em;
+}
+
+.header_right { 
+	@include float-right(right); 
+}
+.header_left { 
+	@include float-left(left); 
+}
+
+/* Listings */
+.listingH1 {
+	font-weight: bold;
+	color: $primaryColor;
+	background-color: $greyLight;
+}
+.container_listings {
+	border: 1px solid $greyLight; 
+	margin-bottom: 1em;
+}

@@ -1,5 +1,79 @@
 /* CSS for Remote Loc */
+/* Colors */
 body {
   color: #777777; }
+
+a:active, a:link, a:visited {
+  color: #117B9E;
+  text-decoration: none; }
+
+a:hover {
+  color: #38C4F2;
+  text-decoration: none; }
+
+/* Buttons */
+.primaryButton {
+  background-color: #117B9E;
+  border: #117596 solid 1px;
+  border-radius: 8px;
+  padding: .1em .55em;
+  margin: 0 .5em;
+  font-weight: 900;
+  font-size: 150%;
+  color: #ffffff; }
+
+.primaryButton:active, .primaryButton:visited, .primaryButton:link {
+  color: #ffffff; }
+
+.primaryButton:hover {
+  background-color: #38C4F2;
+  border: #117B9E solid 1px;
+  color: #ffffff; }
+
+/* BootStrap Button */
+.BSButton {
+  background-color: #117B9E;
+  border: #117596 solid 1px;
+  border-radius: 8px;
+  padding: .8em .8em .65em .8em;
+  margin: -10px .5em 0 .5em;
+  color: #ffffff; }
+
+.BSButton:active, .BSButton:visited, .BSButton:link {
+  color: #ffffff; }
+
+.BSButton:hover {
+  background-color: #38C4F2;
+  border: #117B9E solid 1px;
+  color: #ffffff; }
+
+.logo {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 350%;
+  color: #117B9E; }
+
+.rListing {
+  border: 1px solid grey;
+  background-color: white; }
+
+/* Left Float */
+/* Right Float */
+.header_right {
+  float: right;
+  padding-right: 5em; }
+
+.header_left {
+  float: left;
+  padding-left: 5em; }
+
+/* Listings */
+.listingH1 {
+  font-weight: bold;
+  color: #117B9E;
+  background-color: #f5f5f5; }
+
+.container_listings {
+  border: 1px solid #f5f5f5;
+  margin-bottom: 1em; }
 
 /*# sourceMappingURL=style.css.map */

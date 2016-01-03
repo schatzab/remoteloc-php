@@ -1,7 +1,6 @@
 /*primary JS file - chelsea town */
 
 /* Constructor Function for Each Listing */
-
 function EachListing(loc, desks, drinks, food, hours){
 	this.loc = loc;
 	this.desks = desks;
@@ -18,3 +17,4 @@ function loadListings() {
   }
 }
 window.onload = loadListings;
+

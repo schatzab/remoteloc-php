@@ -18,15 +18,12 @@
 	display: inline-block;
 }
 .headerLogo {
-	visibility: hidden; /* hide logo in nav will scroll */
+	opacity: 0; /* hide logo in nav will scroll */
 }
 /* Scroll Classes */
 .headerLogoScroll { /* called with navScroll.js */
-	visibility: inline;
+	opacity: 0;
 	@extend .logo;
 	font-size: 200%;
 }
-.headerNavScoll {
-	@extend .headerNav;
-	height: 10em;
-}
+

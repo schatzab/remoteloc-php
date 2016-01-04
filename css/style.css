@@ -1,7 +1,9 @@
 /* CSS for Remote Loc */
 /* Colors */
 body {
-  color: #777777; }
+  color: #777777;
+  font-weight: 400;
+  font-family: 'Catamaran', sans-serif; }
 
 a:active, a:link, a:visited {
   color: #117B9E;
@@ -54,7 +56,7 @@ a:hover {
   background-color: white; }
 
 /* Header Nav Bar */
-.headerNav, .headerNavScoll {
+.headerNav {
   background-color: rgba(0, 0, 0, 0.7);
   color: #ffffff;
   padding: 1em 0;
@@ -73,17 +75,14 @@ a:hover {
   display: inline-block; }
 
 .headerLogo {
-  visibility: hidden;
+  opacity: 0;
   /* hide logo in nav will scroll */ }
 
 /* Scroll Classes */
 .headerLogoScroll {
   /* called with navScroll.js */
-  visibility: inline;
+  opacity: 0;
   font-size: 200%; }
-
-.headerNavScoll {
-  height: 10em; }
 
 /* Listings */
 .listingH1 {

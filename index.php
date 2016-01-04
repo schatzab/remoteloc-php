@@ -12,15 +12,14 @@
 <script type="text/javascript" src="js/navScroll.js"></script>
 <title>Remote Loc</title>
 </head>
-<body onscroll="navScroll()">
+<body onscroll="navScroll(1)">
 <!-- header -->		
 <?php include("inc/header.inc.php"); ?></div> 
 <!-- listings -->		
 <?php include("inc/listings.inc.php"); ?></div> 
 <!-- footer -->	
 <?php include("inc/footer.inc.php"); ?></div> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </body>
 </html>

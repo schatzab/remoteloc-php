@@ -6,11 +6,17 @@ $secondColor: #38C4F2;
 $primaryDark: #117596;
 $white: #ffffff;
 $greyLight: #f5f5f5;
+$greyPrimary: #777777;
 
-body { color: #777777; }
+body { 
+	color: $greyPrimary; 
+	font-weight: 400;
+	font-family: 'Catamaran', sans-serif;
+}
 
 a:active, a:link, a:visited { color: $primaryColor; text-decoration: none; } 
 a:hover {  color: $secondColor; text-decoration: none; }
+
 
 @import 'buttons';
 

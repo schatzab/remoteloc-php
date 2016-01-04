@@ -1,5 +1,5 @@
 <!-- footer -->
 
 <footer class="container-fluid text-center">
-  <p>Created in Bend, Oregon &copy; <?php echo date("Y"); ?></p>		
+  <p>Made with <span class="heart">&#9825;</span> in Bend, Oregon &copy; <?php echo date("Y"); ?></p>		
 </footer>

@@ -23,23 +23,8 @@ a:hover {  color: $secondColor; text-decoration: none; }
 	border: 1px solid grey;
 	background-color: white;
 }
-/* Left Float */
-@mixin float-left($float-type-l) {
-  	float: $float-type-l;
-  	padding-left: 5em;
-}
-/* Right Float */
-@mixin float-right($float-type-r) {
-  	float: $float-type-r;
-  	padding-right: 5em;
-}
 
-.header_right { 
-	@include float-right(right); 
-}
-.header_left { 
-	@include float-left(left); 
-}
+@import 'nav';
 
 /* Listings */
 .listingH1 {
@@ -51,3 +36,5 @@ a:hover {  color: $secondColor; text-decoration: none; }
 	border: 1px solid $greyLight; 
 	margin-bottom: 1em;
 }
+/* footer */
+.heart { color: $primaryColor; }

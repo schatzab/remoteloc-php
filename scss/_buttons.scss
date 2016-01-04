@@ -1,24 +1,30 @@
 /* Buttons */
 .primaryButton {
-	background-color: $primaryColor;
-	border: $primaryDark solid 1px;
-	border-radius: 8px;
-	padding: .1em .55em;
-	margin: 0 .5em;
+	margin: 0 0.5em 0 1.5em;
 	font-weight: 900;
 	font-size: 150%;
+	color: $secondColor;
+}
+.primaryButton span {
+	font-size: 90%;
+	font-weight: normal;
+	margin-left: 0.5em;
+	font-weight: 400;
+	font-family: 'Catamaran', sans-serif;
 	color: $white;
 }
-.primaryButton:active, .primaryButton:visited, .primaryButton:link { color: $white; }
-.primaryButton:hover { background-color: $secondColor; 	border: $primaryColor solid 1px; color: $white; }
+.primaryButton:active, .primaryButton:visited, .primaryButton:link, .primaryButton span:hover { color: $secondColor; }
 /* BootStrap Button */
 .BSButton {
-	background-color: $primaryColor;
-	border: $primaryDark solid 1px;
-	border-radius: 8px;
-	padding: .8em .8em .65em .8em;
-	margin: -10px .5em 0 .5em;
+	margin: -10px 0 0 1.5em;
+	color: $secondColor;
+}
+.BSButton span {
+	margin-left: 0.5em;
+	font-size: 130%;
+	font-weight: 400;
+	font-family: 'Catamaran', sans-serif;
 	color: $white;
 }
-.BSButton:active, .BSButton:visited, .BSButton:link { color: $white; }
-.BSButton:hover { background-color: $secondColor; 	border: $primaryColor solid 1px; color: $white; }
+.BSButton:active, .BSButton:visited, .BSButton:link, .BSButton span:hover { color: $secondColor; }
+

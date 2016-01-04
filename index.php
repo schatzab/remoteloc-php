@@ -7,11 +7,12 @@
 <link rel="shortcut icon" href="/images/favicon.ico">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link href='https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Catamaran:400,800' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/navScroll.js"></script>
 <title>Remote Loc</title>
 </head>
-<body>
+<body onscroll="navScroll()">
 <!-- header -->		
 <?php include("inc/header.inc.php"); ?></div> 
 <!-- listings -->		

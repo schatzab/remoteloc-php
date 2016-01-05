@@ -13,7 +13,7 @@
     <?php
     /* get db connection */
     include('/home/remoteloc/config/connection.php'); 
-    $query = "SELECT id,name,locDesc,wifi from location order by name"; /*alpha order*/
+    $query = "SELECT id,name,locDesc,wifi from location_oregon_bend order by name"; /*alpha order*/
     $result = mysqli_query($con, $query) or die('Sorry, could not get listings at this time ');
     if (mysqli_num_rows($result) == 0) /* If fails... */
     {

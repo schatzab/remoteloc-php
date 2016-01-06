@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Remote Locations" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="/images/favicon.ico">
+<!-- <link rel="shortcut icon" href="/images/favicon.ico">  -->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link href='https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Catamaran:400,800' rel='stylesheet' type='text/css'>

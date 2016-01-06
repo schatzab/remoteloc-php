@@ -3,8 +3,9 @@
     <nav class="container">
         <div id="headerLogo" class="headerLogo">Remote Loc</div><!-- place holder -->
         <div id="headerLinks">
-            <a href="/inc/newlisting.inc.php" class="primaryButton">&plus;<span>add listing</span></a>
-            <a href="#" class="glyphicon glyphicon-log-in BSButton"><span>login</span></a>
+            <!-- <a href="#" class="glyphicon glyphicon-search BSButton"></a> -->
+            <a href="sp/login_shell.php?content=login" class="glyphicon glyphicon-log-in BSButton"><span>login</span></a> <!-- passing var login to login_shell page -->
+            <a href="/inc/newlisting.inc.php"><button type="button" class="btn btn-success primaryButton" >&plus;<span> add location</span></button></a>
         </div>
     </nav>
 </header>

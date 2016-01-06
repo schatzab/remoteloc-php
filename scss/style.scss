@@ -2,7 +2,7 @@
 
 /* Colors */
 $primaryColor: #117B9E;
-$secondColor: #38C4F2;
+$secondColor: #38C4F2; 
 $primaryDark: #117596;
 $white: #ffffff;
 $greyLight: #f5f5f5;
@@ -13,10 +13,10 @@ body {
 	font-weight: 400;
 	font-family: 'Catamaran', sans-serif;
 }
+html { overflow-y: scroll; }
 
 a:active, a:link, a:visited { color: $primaryColor; text-decoration: none; } 
 a:hover {  color: $secondColor; text-decoration: none; }
-
 
 @import 'buttons';
 
@@ -31,6 +31,7 @@ a:hover {  color: $secondColor; text-decoration: none; }
 }
 
 @import 'nav';
+@import 'login';
 
 /* Listings */
 .listingH1 {

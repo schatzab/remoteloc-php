@@ -5,6 +5,9 @@ body {
   font-weight: 400;
   font-family: 'Catamaran', sans-serif; }
 
+html {
+  overflow-y: scroll; }
+
 a:active, a:link, a:visited {
   color: #117B9E;
   text-decoration: none; }
@@ -15,36 +18,47 @@ a:hover {
 
 /* Buttons */
 .primaryButton {
-  margin: 0 0.5em 0 1.5em;
-  font-weight: 900;
-  font-size: 150%;
-  color: #38C4F2; }
+  font-weight: bold;
+  font-size: 135%;
+  color: #ffffff;
+  background-color: #38C4F2;
+  border: 1px solid #38C4F2;
+  margin: 0.7em 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em; }
 
 .primaryButton span {
-  font-size: 90%;
-  font-weight: normal;
-  margin-left: 0.5em;
-  font-weight: 400;
-  font-family: 'Catamaran', sans-serif;
-  color: #ffffff; }
+  font-weight: 300;
+  font-size: 80%;
+  font-family: 'Catamaran', sans-serif; }
 
-.primaryButton:active, .primaryButton:visited, .primaryButton:link, .primaryButton span:hover {
-  color: #38C4F2; }
+.primaryButton:active, .primaryButton:visited, .primaryButton:link {
+  background-color: #38C4F2; }
 
-/* BootStrap Button */
+.primaryButton:hover {
+  background-color: #117B9E;
+  border: 1px solid #117B9E; }
+
+/* BootStrap Icon Link */
 .BSButton {
-  margin: -10px 0 0 1.5em;
-  color: #38C4F2; }
+  margin: -10px 1.5em 0 0;
+  padding: 1.5em;
+  /* must match hover padding */
+  color: #ffffff; }
 
 .BSButton span {
   margin-left: 0.5em;
-  font-size: 130%;
-  font-weight: 400;
+  font-size: 100%;
+  font-weight: 300;
   font-family: 'Catamaran', sans-serif;
   color: #ffffff; }
 
-.BSButton:active, .BSButton:visited, .BSButton:link, .BSButton span:hover {
+.BSButton:active, .BSButton:visited, .BSButton:link {
   color: #38C4F2; }
+
+.BSButton:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1.5em; }
 
 .logo, .headerLogoScroll {
   font-family: 'Oleo Script Swash Caps', cursive;
@@ -59,7 +73,6 @@ a:hover {
 .headerNav {
   background-color: rgba(0, 0, 0, 0.7);
   color: #ffffff;
-  padding: 1em 0;
   min-height: 3em;
   position: fixed;
   top: 0px;
@@ -83,6 +96,30 @@ a:hover {
   /* called with navScroll.js */
   opacity: 0;
   font-size: 200%; }
+
+/* Login Styles */
+#standalone {
+  padding: 2em 4em;
+  width: 70%;
+  height: 100%;
+  margin: 2em auto;
+  position: relative;
+  /* needed to allow header and options to use z-index and be on top */ }
+
+.standalone_login {
+  padding: 4em;
+  width: 30%;
+  margin: 1em auto;
+  position: relative;
+  /* needed to allow header and options to use z-index and be on top */ }
+
+.standalone_logo {
+  border: 0px solid black;
+  font-weight: bold;
+  margin: 0 0 2em 1.5em;
+  background: url("../images/logo_script.png") no-repeat;
+  width: 278px;
+  height: 50px; }
 
 /* Listings */
 .listingH1 {

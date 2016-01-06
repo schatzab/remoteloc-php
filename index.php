@@ -1,3 +1,7 @@
+<?php
+session_start();
+// log sessions, must be at top
+?>
 <!DOCTYPE html>
 <html lang="en" ng-app>
 <head>

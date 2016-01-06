@@ -1,3 +1,7 @@
+<?php
+session_start();
+// must run at the very top of each web page to log sessions
+?>
 <!-- Login Page -->
 <!DOCTYPE html>
 <html lang="en">

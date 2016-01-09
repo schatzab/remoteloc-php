@@ -19,7 +19,7 @@
 
 /* BootStrap Icon Link */
 .BSButton {
-	margin: -10px 1.5em 0 0;
+	margin: -10px 1.5em 0 -1.5em;
 	padding: 1.5em; /* must match hover padding */
 	color: $white;
 }
@@ -32,4 +32,10 @@
 }
 .BSButton:active, .BSButton:visited, .BSButton:link { color: $secondColor; }
 .BSButton:hover { background-color: rgba(0, 0, 0, 0.1); padding: 1.5em; }
-
+.BSButton_text {
+	@extend .BSButton;
+	padding: 1.35em 1.5em;
+}
+.BSButton_text:hover {
+	padding: 1.35em 1.5em;	
+}

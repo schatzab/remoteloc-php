@@ -40,25 +40,31 @@ a:hover {
   border: 1px solid #117B9E; }
 
 /* BootStrap Icon Link */
-.BSButton {
-  margin: -10px 1.5em 0 0;
+.BSButton, .BSButton_text {
+  margin: -10px 1.5em 0 -1.5em;
   padding: 1.5em;
   /* must match hover padding */
   color: #ffffff; }
 
-.BSButton span {
+.BSButton span, .BSButton_text span {
   margin-left: 0.5em;
   font-size: 100%;
   font-weight: 300;
   font-family: 'Catamaran', sans-serif;
   color: #ffffff; }
 
-.BSButton:active, .BSButton:visited, .BSButton:link {
+.BSButton:active, .BSButton_text:active, .BSButton:visited, .BSButton_text:visited, .BSButton:link, .BSButton_text:link {
   color: #38C4F2; }
 
-.BSButton:hover {
+.BSButton:hover, .BSButton_text:hover {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 1.5em; }
+
+.BSButton_text {
+  padding: 1.35em 1.5em; }
+
+.BSButton_text:hover {
+  padding: 1.35em 1.5em; }
 
 .logo, .headerLogoScroll {
   font-family: 'Oleo Script Swash Caps', cursive;

@@ -23,11 +23,10 @@ a:hover {  color: $secondColor; text-decoration: none; }
 .logo {
 	font-family: 'Oleo Script Swash Caps', cursive;
 	font-size: 350%;
-	color: $primaryColor;
+	color: $white;
 }
-.rListing { 
-	border: 1px solid grey;
-	background-color: white;
+.ct_section_bg {
+	background-color: $secondColor;
 }
 
 @import 'nav';

@@ -69,11 +69,10 @@ a:hover {
 .logo, .headerLogoScroll {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-size: 350%;
-  color: #117B9E; }
+  color: #ffffff; }
 
-.rListing {
-  border: 1px solid grey;
-  background-color: white; }
+.ct_section_bg {
+  background-color: #38C4F2; }
 
 /* Header Nav Bar */
 .headerNav {

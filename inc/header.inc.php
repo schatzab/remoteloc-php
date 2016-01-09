@@ -3,14 +3,24 @@
     <nav class="container">
         <div id="headerLogo" class="headerLogo">Remote Loc</div><!-- place holder -->
         <div id="headerLinks">
-            <!-- <a href="#" class="glyphicon glyphicon-search BSButton"></a> -->
-            <a href="sp/login_shell.php?content=register" class="BSButton_text"><span>sign up</span></a> <!-- pass register var -->
-            <a href="sp/login_shell.php?content=login" class="glyphicon glyphicon-log-in BSButton"><span>login</span></a> <!-- passing var login to login_shell page -->
+            <?php
+                if (isset($_SESSION['valid_rl_user']))
+                {
+                    $username = $_SESSION['valid_rl_user'];
+                    echo "<a href=\"/\" class=\"BSButton_text\"><span>$username</span></a>";
+                    echo "<a href=\"inc/logout.inc.php\" class=\"BSButton_text\">log out</a>";
+                } 
+                if (!isset($_SESSION['valid_rl_user']))
+                {
+                    echo "<a href=\"sp/login_shell.php?content=register\" class=\"BSButton_text\"><span>sign up</span></a>";
+                    echo "<a href=\"sp/login_shell.php?content=login\" class=\"glyphicon glyphicon-log-in BSButton\"><span>login</span></a>";
+                } 
+                ?>
             <a href="/inc/newlisting.inc.php"><button type="button" class="btn btn-success primaryButton" >&plus;<span> add location</span></button></a>
         </div>
     </nav>
 </header>
-<section class="jumbotron ct_section_red">
+<section class="jumbotron ct_section_bg">
   <div class="container">
     <header class="page-header">
         <div id="logo" class="logo">Remote Loc</div>    

@@ -16,7 +16,10 @@
                     echo "<a href=\"sp/login_shell.php?content=login\" class=\"glyphicon glyphicon-log-in BSButton\"><span>login</span></a>";
                 } 
                 ?>
-            <a href="/inc/newlisting.inc.php"><button type="button" class="btn btn-success primaryButton" >&plus;<span> add location</span></button></a>
+            <!-- Add Remote Location  -->
+            <button type="button" class="btn btn-success primaryButton" onclick="addLoc('filter_div_underlay', 'filter_div', 'pod_overlay_container')">&plus;<span> add location</span></button>
+            <!-- Include new location page -->
+            <?php include("inc/newLoc.inc.php"); ?>
         </div>
     </nav>
 </header>
@@ -28,4 +31,3 @@
     </header>
   </div> 
 </section>
-

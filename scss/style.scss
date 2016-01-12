@@ -18,6 +18,23 @@ html { overflow-y: scroll; }
 a:active, a:link, a:visited { color: $primaryColor; text-decoration: none; } 
 a:hover {  color: $secondColor; text-decoration: none; }
 
+h2 { color: $primaryColor; }
+
+@mixin round($size) {
+  -webkit-border-top-left-radius: $size;
+  -webkit-border-top-right-radius: $size;
+  -webkit-border-bottom-right-radius: $size;
+  -webkit-border-bottom-left-radius: $size;
+  -moz-border-radius-topleft: $size;
+  -moz-border-radius-topright: $size;
+  -moz-border-radius-bottomright: $size;
+  -moz-border-radius-bottomleft: $size;
+  border-top-left-radius: $size;
+  border-top-right-radius: $size;
+  border-bottom-right-radius: $size;
+  border-bottom-left-radius: $size;
+}
+
 @import 'buttons';
 
 .logo {
@@ -31,6 +48,7 @@ a:hover {  color: $secondColor; text-decoration: none; }
 
 @import 'nav';
 @import 'login';
+@import 'addLoc';
 
 /* Listings */
 .listingH1 {

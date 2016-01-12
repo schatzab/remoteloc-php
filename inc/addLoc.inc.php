@@ -51,24 +51,23 @@ if ($row['name'] == $name)
 }
 if ($baduser != 1)
 {
-	$headers = "From: me@chelseatown.com \r\n";
-	$headers .= "Reply-To: me@chelseatown.com \r\n";
-	$headers .= "Cc: me@chelseatown.com \r\n";
+	$headers = "From: admin@remoteloc.com \r\n";
+	$headers .= "Reply-To: admin@remoteloc.com \r\n";
 	$email_to = "me@chelseatown.com"; 
-	$email_subject = "A new Remote Loc submission";
+	$email_subject = "A New Remote Location!";
 	$email_message .= "Business Name: ".$name."\n";
 	$email_message .= "City: ".$city."\n";
 	$email_message .= "State: ".$state."\n";
 	$email_message .= "Comments: ".$locDesc."\n";
 	mail($email_to,$email_subject,$email_message,$headers);  
 
-  	echo "<h2>Thank you for your remote location submission.</h2>\n";
-  	echo "<a href=\"/\">Return Home</a>\n";
+  	echo "<h2>Thank you for adding a remote location!</h2>\n";
+  	echo "You should see your location shortly. <a href=\"/\">Return Home</a>\n";
   	exit;
 } else
 {
     // something didn't work...
-    echo "<h2>Sorry, there was a problem processing your submission.</h2><br>\n";
+    echo "<h2>Sorry, there was a problem processing your location.</h2><br>\n";
     echo "<a href=\"/\">Please try again.</a>\n";
 }
 ?>

@@ -1,10 +1,4 @@
 /* Add Location Button */
-
-.container_addLoc a {
-	color: #89c539;
-	font-weight: bold;
-	}
-/* Overlapping Div */
 #filter_div {
 	border-radius: 6px;
    	font: 0.9em verdana;
@@ -13,19 +7,19 @@
 	top: 30%;
     z-index: 10000;
     visibility: hidden;
-	background-color: #ffffff;
-	padding: 20px;
 	text-align: left;
 	padding: 3em 7em 5em 7em;
 	border: 2px solid $greyLight;
+	color: $primaryColor;
+	background-color: $white;
 	}
 #filter_div a {
 	color: $secondColor;
 	}
 #filter_div_underlay {
+	position: absolute;
 	left: 0;
 	top: 0;
-	position: absolute;
 	width: 200%;
     height: 200%;
 	border: 0;
@@ -34,20 +28,11 @@
   	z-index: 9999;
     visibility: hidden;
 	background-color: $white;
-	opacity: 0.80; 
+	opacity: 0.70; 
  	filter:alpha(opacity = 70); 
 	}
 /* pop up div */
-.pod_overlay_container {
-	overflow-y: scroll;
-	overflow-x: hidden;
 
-	}
-.pod_overlay_header {
-	font-weight: bold;
-	color: #58595b;
-	font-size: 180%;
-	}
 /* X circle close */
 .close_overlay {
 	line-height: 200%; /* adjusts "x" height */

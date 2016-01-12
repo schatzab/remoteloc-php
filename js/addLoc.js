@@ -12,7 +12,7 @@ function addLoc(under, over, pod) {
 	// overlay.style.top = (window.height - overlayPod.style.height) / 2;
 	// overlay.style.left = (window.width - overlayPod.style.width) / 2;
 }
-
+/* Close Overlay */
 function closeOverlay(under, over){
 	var underlay = document.getElementById(under);
 	var overlay = document.getElementById(over);

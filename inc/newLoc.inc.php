@@ -15,7 +15,8 @@
                     <!-- State -->
                     <input type="text" id="locState" name="state" class="text_field_generic" value="State *" onclick="if(this.value=='State *'){this.value=''}" onblur="if (this.value==''){this.value='State *'}"><br><br>
                     <!-- Comments -->
-                    <textarea name="locDesc" class="text_field_generic" value="Comments" onclick="if(this.value=='Comments'){this.value=''}" onblur="if (this.value==''){this.value='Comments'}"></textarea><br><br>
+                    Comments: <br>
+                    <textarea name="locDesc" class="text_field_generic" value="Comments"></textarea><br><br>
                     <!-- Submit -->
                     <input type="submit" value="ADD LOCATION" class="gen_button_prominent">
                     <input type="hidden" name="content" value="addLoc">

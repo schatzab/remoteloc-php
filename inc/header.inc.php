@@ -15,7 +15,7 @@
                     echo "<a href=\"sp/login_shell.php?content=register\" class=\"BSButton_text\"><span>sign up</span></a>";
                     echo "<a href=\"sp/login_shell.php?content=login\" class=\"glyphicon glyphicon-log-in BSButton\"><span>login</span></a>";
                 } 
-                ?>
+            ?>
             <!-- Add Remote Location  -->
             <button type="button" class="btn btn-success primaryButton" onclick="addLoc('filter_div_underlay', 'filter_div', 'pod_overlay_container')">&plus;<span> add location</span></button>
             <!-- Include new location page -->
@@ -26,8 +26,8 @@
 <section class="jumbotron ct_section_bg">
   <div class="container">
     <header class="page-header">
-        <div id="logo" class="logo">Remote Loc</div>    
-        <h3>Find a remote work place</h3>
+        <div id="logo" class="logo"><a href="/">Remote Loc</a></div>    
+        <h3>Find the best remote work places</h3>
     </header>
   </div> 
 </section>

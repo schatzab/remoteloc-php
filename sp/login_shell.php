@@ -13,6 +13,7 @@ session_start();
 <link href='https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Catamaran:400,800' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="../css/style.css">
+<script type="text/javascript" src="js/addLoc.js"></script>
 <title>Remote Loc</title>
 </head>
 <body>

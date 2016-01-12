@@ -9,8 +9,8 @@ function addLoc(under, over, pod) {
 	var overlay = document.getElementById(over);
 	var overlayPod = document.getElementsByClassName(pod);
 	overlay.style.visibility = "visible";
-	overlay.style.top = (window.height - overlayPod.style.height) / 2;
-	overlay.style.left = (window.width - overlayPod.style.width) / 2;
+	// overlay.style.top = (window.height - overlayPod.style.height) / 2;
+	// overlay.style.left = (window.width - overlayPod.style.width) / 2;
 }
 
 function closeOverlay(under, over){

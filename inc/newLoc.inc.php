@@ -6,10 +6,10 @@
             <!-- close X -->
             <a onclick="closeOverlay('filter_div_underlay', 'filter_div')"><div class="close_overlay">&nbsp;&nbsp;X</div></a>
             <!-- Overlay Content -->
-            <h2>Add Remote Location</h2>
+            <h2>Add a Remote Location</h2>
                 <form action="../index.php" method="post">
-                    <input type="text" name="locName" class="text_field_generic" value="Business Name" onclick="if(this.value=='Business Name'){this.value=''}" onblur="if (this.value==''){this.value='Business Name'}"><br><br>
-                    <input type="text" name="locName" class="text_field_generic" value="Comments" onclick="if(this.value=='Comments'){this.value=''}" onblur="if (this.value==''){this.value='Comments'}"><br><br>
+                    <input type="text" id="locName" class="text_field_generic" value="Business Name" onclick="if(this.value=='Business Name'){this.value=''}" onblur="if (this.value==''){this.value='Business Name'}"><br><br>
+                    <input type="text" name="comments" class="text_field_generic" value="Comments" onclick="if(this.value=='Comments'){this.value=''}" onblur="if (this.value==''){this.value='Comments'}"><br><br>
                     <input type="submit" value="Submit">
                     <input type="hidden" name="content" value="addLoc">
                     <!-- hidden variable sends to addLoc -->

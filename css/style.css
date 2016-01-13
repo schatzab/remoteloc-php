@@ -69,6 +69,11 @@ h2 {
 .BSButton_text:hover {
   padding: 1.35em 1.5em; }
 
+/* Styles maintaining images and icons */
+.listingsEachIcons {
+  /* standard size for icons in Listings-Each */
+  width: 20px; }
+
 .logo, .headerLogoScroll {
   font-family: 'Oleo Script Swash Caps', cursive;
   font-size: 350%;

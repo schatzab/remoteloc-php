@@ -5,12 +5,12 @@
     <ul class="breadcrumb">
     	<li><a href="#">Home</a></li>
     	<li><a href="#">Oregon</a></li>
-    	<li class="active" onclick="includeCity()">Bend</li>
+    	<li class="active" onclick="includeEach()">Bend</li>
 	</ul>
 <!-- listingsCity -->   
 <?php               
 if (!isset($_REQUEST['content']))                   
-include("inc/listingsCity.inc.php");               
+include("inc/listingsEach.inc.php");               
 else               
 {                   
 $content = $_REQUEST['content'];                   

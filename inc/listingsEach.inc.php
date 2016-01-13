@@ -36,7 +36,7 @@
         // wifi yes or no
         if ($wifi === "yes")
           {
-          echo "<br>Wi-Fi Icon<br>";
+          echo "<br><img src=\"images/icon_wifi.svg\" class=\"listingsEachIcons\" title=\"Wi-Fi Available\">";
           }
         echo "</section>";
         echo "</div>";

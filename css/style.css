@@ -161,7 +161,8 @@ h2 {
   padding: 3em 7em 5em 7em;
   border: 2px solid #f5f5f5;
   color: #117B9E;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  overflow: scroll; }
 
 #filter_div a {
   color: #38C4F2; }
@@ -170,8 +171,8 @@ h2 {
   position: absolute;
   left: 0;
   top: 0;
-  width: 200%;
-  height: 200%;
+  width: 100%;
+  height: 100%;
   border: 0;
   padding: 0;
   margin: 0;

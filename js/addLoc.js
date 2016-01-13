@@ -9,6 +9,7 @@ function addLoc(under, over, pod) {
 	var overlay = document.getElementById(over);
 	var overlayPod = document.getElementsByClassName(pod);
 	overlay.style.visibility = "visible";
+	document.body.style.position = "fixed"; /* stops bg from scrolling */
 	// overlay.style.top = (window.height - overlayPod.style.height) / 2;
 	// overlay.style.left = (window.width - overlayPod.style.width) / 2;
 }
@@ -18,4 +19,5 @@ function closeOverlay(under, over){
 	var overlay = document.getElementById(over);
 	underlay.style.visibility = "hidden";
 	overlay.style.visibility = "hidden";
+	document.body.style.position = "static";
 }

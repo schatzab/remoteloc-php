@@ -4,7 +4,7 @@
   	<!-- Breadcrumbs -->
     <ul class="breadcrumb">
     	<li><a href="#">Home</a></li>
-    	<li><a href="#">Oregon</a></li>
+    	<li><a href="index.php?content=optionsState">Oregon</a></li>
     	<li class="active" onclick="includeEach()">Bend</li>
 	</ul>
 <!-- listingsCity -->   

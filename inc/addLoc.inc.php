@@ -17,24 +17,24 @@ $locDesc = $_POST['locDesc'];
 $baduser = 0;
 
 // Checks if business name was entered
-if (trim($name) == '')
+if (trim($name) == '' || trim($name) == "Business Name *")
 {
    echo "<h2>Sorry, you must enter a business name.</h2><br>\n";
-   echo "<a href=\"/\">Please try again.</a>\n";
+   echo "<a onclick=\"addLoc('filter_div_underlay', 'filter_div', 'pod_overlay_container')\">Please try again.</a>\n";
    $baduser = 1;
 }
 //Check if city was entered
-if (trim($city) == '')
+if (trim($city) == '' || trim($city) == "City *")
 {
    echo "<h2>Sorry, you must enter a city.</h2><br>\n";
-   echo "<a href=\"/\">Please try again.</a>\n";
+   echo "<a onclick=\"addLoc('filter_div_underlay', 'filter_div', 'pod_overlay_container')\">Please try again.</a>\n";
    $baduser = 1;
 }
 //Check if state was entered
-if (trim($state) == '')
+if (trim($state) == '' || trim($state) == "State *")
 {
    echo "<h2>Sorry, you must enter a state.</h2><br>\n";
-   echo "<a href=\"/\">Please try again.</a>\n";
+   echo "<a onclick=\"addLoc('filter_div_underlay', 'filter_div', 'pod_overlay_container')\">Please try again.</a>\n";
    $baduser = 1;
 
 }
@@ -45,8 +45,6 @@ $result = mysqli_query($con, $query);
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 if ($row['name'] == $name)
 {
-   echo "<h2>Sorry, that business name is already listed on RemoteLoc.</h2><br>\n";
-   echo "<a href=\"/\">Return to Home</a>\n";
    $baduser = 1;
 }
 if ($baduser != 1)
@@ -68,6 +66,6 @@ if ($baduser != 1)
 {
     // something didn't work...
     echo "<h2>Sorry, there was a problem processing your location.</h2><br>\n";
-    echo "<a href=\"/\">Please try again.</a>\n";
+    echo "<a onclick=\"addLoc('filter_div_underlay', 'filter_div', 'pod_overlay_container')\">Please try again.</a>\n";
 }
 ?>

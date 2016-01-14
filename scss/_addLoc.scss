@@ -12,7 +12,8 @@
 	border: 2px solid $greyLight;
 	color: $primaryColor;
 	background-color: $white;
-	overflow: scroll;
+	overflow-y: scroll;
+	height: 40em; /* adjust this per device */
 	}
 #filter_div a {
 	color: $secondColor;
@@ -29,8 +30,8 @@
   	z-index: 9999;
     visibility: hidden;
 	background-color: $white;
-	opacity: 0.70; 
- 	filter:alpha(opacity = 70); 
+	opacity: 0.80; 
+ 	filter:alpha(opacity = 80); 
 	}
 /* pop up div */
 
@@ -50,4 +51,8 @@
 .close_overlay:hover {
 	background-color: $secondColor;
 	color: $white;
+}
+.Locations_error {
+	color: $alertRed;
+	font-size: 80%;
 }

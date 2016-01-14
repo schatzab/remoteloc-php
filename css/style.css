@@ -72,7 +72,8 @@ h2 {
 /* Styles maintaining images and icons */
 .listingsEachIcons {
   /* standard size for icons in Listings-Each */
-  width: 20px; }
+  width: 20px;
+  margin: 0 0.5em 0 0; }
 
 .logo, .headerLogoScroll {
   font-family: 'Oleo Script Swash Caps', cursive;
@@ -167,7 +168,9 @@ h2 {
   border: 2px solid #f5f5f5;
   color: #117B9E;
   background-color: #ffffff;
-  overflow: scroll; }
+  overflow-y: scroll;
+  height: 40em;
+  /* adjust this per device */ }
 
 #filter_div a {
   color: #38C4F2; }
@@ -184,8 +187,8 @@ h2 {
   z-index: 9999;
   visibility: hidden;
   background-color: #ffffff;
-  opacity: 0.70;
-  filter: alpha(opacity=70); }
+  opacity: 0.80;
+  filter: alpha(opacity=80); }
 
 /* pop up div */
 /* X circle close */
@@ -218,6 +221,10 @@ h2 {
 .close_overlay:hover {
   background-color: #38C4F2;
   color: #ffffff; }
+
+.Locations_error {
+  color: #FA0C1C;
+  font-size: 80%; }
 
 /* Listings */
 .listingH1 {

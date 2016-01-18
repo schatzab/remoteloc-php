@@ -21,7 +21,7 @@ session_start();
 <!-- header -->		
 <?php include("inc/header.inc.php"); ?></div> 
 <!-- listings -->		
-<?php include("inc/listings.inc.php"); ?></div> 
+<?php include("inc/chooseState.inc.php"); ?></div> 
 <!-- footer -->	
 <?php include("inc/footer.inc.php"); ?></div> 
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
